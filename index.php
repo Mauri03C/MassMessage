@@ -6,33 +6,66 @@ ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/logs/php_errors.log');
 
 // Iniciar la sesión
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
-// Definir constantes de la aplicación
-define('APPROOT', dirname(__DIR__));
-define('URLROOT', 'http://'.$_SERVER['HTTP_HOST'].'/MassMessage');
+// Cargar configuración primero
+require_once 'config/config.php';
+require_once 'app/helpers/flash_helper.php';
+
+// Luego definir constantes solo si no están definidas
+defined('APPROOT') or define('APPROOT', dirname(__DIR__));
+defined('URLROOT') or define('URLROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/MassMessage');
+defined('SITENAME') or define('SITENAME', 'MassMessage');
 
 // Cargar archivos principales
-require_once 'config/config.php';
 require_once 'core/App.php';
 require_once 'core/Controller.php';
 require_once 'core/Database.php';
 
-// Verificar si el usuario está autenticado
+// Función para verificar si el usuario está autenticado
 function isLoggedIn() {
     return isset($_SESSION['user_id']);
 }
 
 // Función para redireccionar
 function redirect($page) {
-    header('location: ' . URLROOT . '/' . $page);
+    $url = URLROOT . '/' . ltrim($page, '/');
+    header('Location: ' . $url);
     exit();
 }
 
-// Redirigir al login si no está autenticado
-if (!isLoggedIn() && !isset($_GET['url']) || (isset($_GET['url']) && strpos($_GET['url'], 'auth/') === 0)) {
+// Obtener la URL solicitada
+$request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$script_name = dirname($_SERVER['SCRIPT_NAME']);
+$current_path = str_replace($script_name, '', $request_uri);
+
+// Páginas públicas que no requieren autenticación
+$public_pages = ['/auth/login', '/auth/forgot', '/auth/reset', '/errors/404', '/errors/500'];
+
+// Verificar si la ruta actual es pública
+$is_public = in_array($current_path, $public_pages) || $current_path === '/';
+
+// Lógica de redirección
+if (!isLoggedIn() && !$is_public) {
+    $_SESSION['redirect_url'] = $current_path;
     redirect('auth/login');
+    exit();
+}
+
+if (isLoggedIn() && ($current_path === '/auth/login' || $current_path === '/')) {
+    redirect('dashboard');
+    exit();
 }
 
 // Iniciar la aplicación
-$app = new App();
+try {
+    $app = new App();
+} catch (Exception $e) {
+    error_log('Error en la aplicación: ' . $e->getMessage());
+    if (defined('ENVIRONMENT') && ENVIRONMENT === 'development') {
+        die('Error: ' . $e->getMessage());
+    }
+    redirect('errors/500');
+}

@@ -38,3 +38,14 @@ Stack trace:
 #4 C:\xampp\htdocs\MassMessage\index.php(13): App->__construct()
 #5 {main}
   thrown in C:\xampp\htdocs\MassMessage\views\templates\header.php on line 6
+[06-Jun-2025 17:42:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 38
+[06-Jun-2025 17:42:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 39
+[06-Jun-2025 17:42:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 40
+[06-Jun-2025 09:42:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined function flash() in C:\xampp\htdocs\MassMessage\views\auth\login.php:14
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\core\Controller.php(9): require_once()
+#1 C:\xampp\htdocs\MassMessage\controllers\AuthController.php(74): Controller->view('auth/login', Array)
+#2 C:\xampp\htdocs\MassMessage\core\App.php(27): AuthController->login()
+#3 C:\xampp\htdocs\MassMessage\index.php(63): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\MassMessage\views\auth\login.php on line 14

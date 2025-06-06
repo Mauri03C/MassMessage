@@ -1,81 +1,20 @@
-<!-- Agregar antes del cierre del nav -->
-<div class="dropdown">
-    <button class="btn btn-link position-relative" type="button" id="notificationsDropdown" 
-            data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fas fa-bell"></i>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              id="notificationCount"></span>
-    </button>
-    <div class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="notificationsDropdown"
-         style="width: 300px; max-height: 400px; overflow-y: auto;">
-        <div class="list-group list-group-flush" id="notificationsList">
-            <div class="text-center p-3">
-                <div class="spinner-border spinner-border-sm" role="status">
-                    <span class="visually-hidden">Loading...</span>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo SITENAME ?? 'MassMessage'; ?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="<?php echo URLROOT; ?>">MassMessage</a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/auth/logout">Cerrar Sesión</a>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
-    </div>
-</div>
-
-<!-- Agregar antes del cierre del body -->
-<script>
-function loadNotifications() {
-    fetch('/report/getNotifications')
-        .then(response => response.json())
-        .then(notifications => {
-            const list = document.getElementById('notificationsList');
-            list.innerHTML = '';
-
-            if (notifications.length === 0) {
-                list.innerHTML = '<div class="text-center p-3">No notifications</div>';
-                return;
-            }
-
-            notifications.forEach(notification => {
-                const item = document.createElement('a');
-                item.href = '#';
-                item.className = `list-group-item list-group-item-action ${
-                    notification.read_at ? '' : 'bg-light'
-                }`;
-                item.innerHTML = `
-                    <div class="d-flex justify-content-between align-items-center">
-                        <small>${new Date(notification.created_at).toLocaleString()}</small>
-                        ${!notification.read_at ? '<span class="badge bg-primary">New</span>' : ''}
-                    </div>
-                    <p class="mb-1">${notification.message}</p>
-                `;
-                item.onclick = (e) => {
-                    e.preventDefault();
-                    markNotificationRead(notification.id);
-                };
-                list.appendChild(item);
-            });
-
-            updateNotificationCount();
-        });
-}
-
-function markNotificationRead(id) {
-    fetch(`/report/markNotificationRead/${id}`)
-        .then(response => response.json())
-        .then(result => {
-            if (result.success) {
-                loadNotifications();
-            }
-        });
-}
-
-function updateNotificationCount() {
-    const unreadCount = document.querySelectorAll('#notificationsList .bg-light').length;
-    const badge = document.getElementById('notificationCount');
-    badge.textContent = unreadCount;
-    badge.style.display = unreadCount > 0 ? 'block' : 'none';
-}
-
-// Cargar notificaciones inicialmente
-loadNotifications();
-
-// Actualizar cada minuto
-setInterval(loadNotifications, 60000);
-</script>
+    </nav>
+    <div class="container mt-4">

@@ -23,35 +23,48 @@ require_once 'core/Database.php';
 
 // Función de redirección
 function redirect($page) {
-    header('Location: ' . URLROOT . '/' . ltrim($page, '/'));
+    $url = URLROOT . '/' . ltrim($page, '/');
+    header('Location: ' . $url);
     exit();
 }
 
-// Obtener ruta actual
+// Obtener la ruta solicitada
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $script_name = dirname($_SERVER['SCRIPT_NAME']);
 $current_path = str_replace($script_name, '', $request_uri);
 
+// Debug - Ver la ruta actual
+error_log("Ruta actual: " . $current_path);
+
 // Páginas públicas
 $public_pages = ['/auth/login', '/auth/forgot', '/auth/reset', '/errors/404', '/errors/500'];
 
-// Verificar autenticación
+// Verificar si la ruta actual es pública
 $is_public = in_array($current_path, $public_pages) || $current_path === '/';
 
+// Debug
+error_log("¿Es pública? " . ($is_public ? 'Sí' : 'No'));
+error_log("¿Está autenticado? " . (isset($_SESSION['user_id']) ? 'Sí' : 'No'));
+
+// Lógica de redirección
 if (!isset($_SESSION['user_id']) && !$is_public) {
     $_SESSION['redirect_url'] = $current_path;
+    error_log("Redirigiendo a login desde: " . $current_path);
     redirect('auth/login');
+    exit();
 }
 
 if (isset($_SESSION['user_id']) && ($current_path === '/auth/login' || $current_path === '/')) {
+    error_log("Redirigiendo a dashboard desde: " . $current_path);
     redirect('dashboard');
+    exit();
 }
 
-// Iniciar aplicación
+// Iniciar la aplicación
 try {
     $app = new App();
 } catch (Exception $e) {
-    error_log('Error: ' . $e->getMessage());
+    error_log('Error en la aplicación: ' . $e->getMessage());
     if (defined('ENVIRONMENT') && ENVIRONMENT === 'development') {
         die('Error: ' . $e->getMessage());
     }
