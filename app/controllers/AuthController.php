@@ -6,11 +6,6 @@ class AuthController extends Controller {
 
     public function __construct() {
         $this->userModel = $this->model('User');
-        
-        // Iniciar sesión si no está iniciada
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
     }
 
     public function login() {
@@ -94,10 +89,11 @@ class AuthController extends Controller {
                     // Registrar inicio de sesión
                     $this->userModel->logActivity($user->id, 'login', 'Inicio de sesión exitoso');
                     
-                    // Redirigir a la URL solicitada o al dashboard
-                    $redirect = $_SESSION['redirect_url'] ?? 'dashboard';
-                    unset($_SESSION['redirect_url']);
-                    redirect($redirect);
+                    // ***** INICIO DE CAMBIO TEMPORAL PARA DIAGNÓSTICO *****
+                    error_log('[AuthController] DIAGNÓSTICO: Forzando redirección a dashboard.');
+                    unset($_SESSION['redirect_url']); // Limpiar por si acaso
+                    redirect('dashboard');
+                    // ***** FIN DE CAMBIO TEMPORAL PARA DIAGNÓSTICO *****
                     
                 } else {
                     // Incrementar contador de intentos fallidos

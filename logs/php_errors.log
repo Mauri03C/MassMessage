@@ -772,3 +772,433 @@ Stack trace:
 [06-Jun-2025 18:13:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 73
 [06-Jun-2025 18:13:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 75
 [06-Jun-2025 18:13:44 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 76
+[06-Jun-2025 19:02:09 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 12:02:09 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 12:02:09 America/Lima] PHP Warning:  require_once(app/services/EmailService.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php on line 4
+[06-Jun-2025 12:02:09 America/Lima] PHP Fatal error:  Uncaught Error: Failed opening required 'app/services/EmailService.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\core\App.php(15): require_once()
+#1 C:\xampp\htdocs\MassMessage\index.php(72): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php on line 4
+[06-Jun-2025 19:02:15 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:02:15 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 19:02:17 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 12:02:17 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 12:02:17 America/Lima] PHP Warning:  require_once(app/services/EmailService.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php on line 4
+[06-Jun-2025 12:02:17 America/Lima] PHP Fatal error:  Uncaught Error: Failed opening required 'app/services/EmailService.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php:4
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\core\App.php(15): require_once()
+#1 C:\xampp\htdocs\MassMessage\index.php(72): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php on line 4
+[06-Jun-2025 19:10:15 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 12:10:15 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 12:10:15 America/Lima] PHP Fatal error:  Uncaught Error: Cannot call constructor in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php:13
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\core\App.php(16): MessagesController->__construct()
+#1 C:\xampp\htdocs\MassMessage\index.php(72): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php on line 13
+[06-Jun-2025 19:41:14 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 12:41:14 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 12:41:14 America/Lima] PHP Fatal error:  Uncaught Error: Cannot call constructor in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php:13
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\core\App.php(16): MessagesController->__construct()
+#1 C:\xampp\htdocs\MassMessage\index.php(72): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\MassMessage\controllers\MessagesController.php on line 13
+[06-Jun-2025 19:51:28 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 12:51:28 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 12:51:28 America/Lima] PHP Warning:  Undefined array key "templates" in C:\xampp\htdocs\MassMessage\views\messages\create.php on line 92
+[06-Jun-2025 12:51:28 America/Lima] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\MassMessage\views\messages\create.php on line 92
+[06-Jun-2025 19:54:16 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:54:16 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 19:54:18 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 12:54:18 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 19:54:18 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:54:18 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 19:54:20 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 12:54:20 America/Lima] Ruta actual: /messages
+[06-Jun-2025 19:54:21 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 12:54:21 America/Lima] Ruta actual: /messages
+[06-Jun-2025 19:54:33 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 12:54:33 America/Lima] Ruta actual: /messages
+[06-Jun-2025 19:54:35 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 12:54:35 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 12:54:35 America/Lima] PHP Warning:  Undefined array key "templates" in C:\xampp\htdocs\MassMessage\views\messages\create.php on line 92
+[06-Jun-2025 12:54:35 America/Lima] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\MassMessage\views\messages\create.php on line 92
+[06-Jun-2025 19:54:36 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:54:36 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 19:54:39 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:54:39 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 12:54:44 America/Lima] Ruta actual: /
+[06-Jun-2025 19:54:44 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:54:44 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 19:55:08 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 12:55:08 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:14:16 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:14:16 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:15:28 America/Lima] Ruta actual: /
+[06-Jun-2025 20:15:28 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:15:28 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:16:11 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:16:11 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:16:18 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:16:19 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:16:32 Europe/Berlin] URL solicitada: dashboard/index.php
+[06-Jun-2025 13:16:32 America/Lima] Ruta actual: /dashboard/index.php
+[06-Jun-2025 20:23:17 Europe/Berlin] URL solicitada: dashboard/index.php
+[06-Jun-2025 13:23:17 America/Lima] Ruta actual: /dashboard/index.php
+[06-Jun-2025 13:23:24 America/Lima] Ruta actual: /
+[06-Jun-2025 20:23:24 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:23:24 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:25:55 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:25:55 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:26:51 America/Lima] Ruta actual: /
+[06-Jun-2025 13:26:51 America/Lima] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\MassMessage\core\App.php on line 10
+[06-Jun-2025 13:28:25 America/Lima] Ruta actual: /
+[06-Jun-2025 13:28:31 America/Lima] Ruta actual: /
+[06-Jun-2025 13:29:18 America/Lima] Ruta actual: /
+[06-Jun-2025 20:32:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 71
+[06-Jun-2025 20:32:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 72
+[06-Jun-2025 20:32:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 73
+[06-Jun-2025 20:32:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 75
+[06-Jun-2025 20:32:52 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\MassMessage\config\config.php on line 76
+[06-Jun-2025 13:32:52 America/Lima] Ruta actual: /
+[06-Jun-2025 13:36:13 America/Lima] Ruta actual: /
+[06-Jun-2025 13:39:50 America/Lima] Ruta actual: /
+[06-Jun-2025 20:39:50 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:39:50 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:39:51 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:39:51 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:39:51 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:39:51 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:40:08 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:08 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:40:09 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:40:09 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 13:40:18 America/Lima] Ruta actual: /
+[06-Jun-2025 20:40:18 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:40:18 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:40:34 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 13:40:34 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 20:40:34 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:34 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:40:35 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:40:35 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:40:35 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:35 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:40:49 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:49 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:40:50 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined method User::storeRememberToken() in C:\xampp\htdocs\MassMessage\app\controllers\AuthController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\app\controllers\AuthController.php(91): AuthController->rememberMe('2')
+#1 C:\xampp\htdocs\MassMessage\core\App.php(63): AuthController->login()
+#2 C:\xampp\htdocs\MassMessage\index.php(72): App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\MassMessage\app\controllers\AuthController.php on line 169
+[06-Jun-2025 20:40:54 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:54 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:40:54 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:40:54 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:40:58 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 13:40:58 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 20:40:58 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:58 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:40:58 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:40:58 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:40:58 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:40:58 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:41:07 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:41:07 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 20:41:08 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:41:08 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 13:42:01 America/Lima] Ruta actual: /
+[06-Jun-2025 20:42:01 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:42:01 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 20:44:22 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:44:22 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:44:22 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:44:22 America/Lima] [App.php] Buscando archivo controlador: app/controllers/DashboardController.php
+[06-Jun-2025 13:44:22 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:44:22 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:44:22 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:44:22 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:44:22 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:44:22 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 20:44:24 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 13:44:24 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Buscando archivo controlador: app/controllers/AuthController.php
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Llamando a: AuthController->logout con params: 
+[06-Jun-2025 20:44:24 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:44:24 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Buscando archivo controlador: app/controllers/AuthController.php
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:44:24 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:44:24 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:44:24 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:44:24 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Buscando archivo controlador: app/controllers/AuthController.php
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:44:24 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:44:33 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:44:33 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:44:33 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:44:33 America/Lima] [App.php] Buscando archivo controlador: app/controllers/AuthController.php
+[06-Jun-2025 13:44:33 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:44:33 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:44:34 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:44:34 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 13:44:34 America/Lima] [App.php] Intentando cargar controlador: Public
+[06-Jun-2025 13:44:34 America/Lima] [App.php] Buscando archivo controlador: app/controllers/PublicController.php
+[06-Jun-2025 13:44:34 America/Lima] [App.php] Buscando archivo controlador: controllers/PublicController.php
+[06-Jun-2025 13:44:34 America/Lima] [App.php] Controlador NO ENCONTRADO: PublicController.php. Cargando HomeController->notFound.
+[06-Jun-2025 13:44:34 America/Lima] [App.php] Método NO ENCONTRADO: img en HomeController. Usando notFound.
+[06-Jun-2025 13:44:34 America/Lima] [App.php] Llamando a: HomeController->notFound con params: img, logo.png
+[06-Jun-2025 13:46:33 America/Lima] Ruta actual: /
+[06-Jun-2025 20:46:33 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:46:33 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:46:33 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:46:33 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 13:46:33 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:46:33 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:46:33 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:46:33 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:46:33 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:46:33 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 20:46:35 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 13:46:35 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Llamando a: AuthController->logout con params: 
+[06-Jun-2025 20:46:35 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:46:35 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:46:35 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:46:36 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:46:36 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:46:36 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:46:36 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:46:36 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:46:36 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:46:36 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:46:36 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:46:42 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:46:42 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:46:42 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:46:42 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:46:42 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:46:42 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:46:43 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:46:43 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Intentando cargar controlador: Public
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/PublicController.php
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/app/controllers/PublicController.php
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/controllers/PublicController.php
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/controllers/PublicController.php
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Controlador NO ENCONTRADO: PublicController.php. Cargando HomeController->notFound.
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Método NO ENCONTRADO: img en HomeController. Usando notFound.
+[06-Jun-2025 13:46:43 America/Lima] [App.php] Llamando a: HomeController->notFound con params: img, logo.png
+[06-Jun-2025 13:49:20 America/Lima] Ruta actual: /
+[06-Jun-2025 20:49:21 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:49:21 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:49:21 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:49:21 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 13:49:21 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:49:21 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:49:21 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:49:21 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:49:21 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:49:21 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 20:49:26 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 13:49:26 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Llamando a: AuthController->logout con params: 
+[06-Jun-2025 20:49:26 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:49:26 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:49:26 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:49:26 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:49:27 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:49:27 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:49:27 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:49:27 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:49:27 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:49:27 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:49:27 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:49:38 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:49:38 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:49:38 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:49:38 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:49:38 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:49:38 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 13:49:39 America/Lima] [AuthController] Valor de $_SESSION[redirect_url] antes de unset: /public/img/logo.png
+[06-Jun-2025 13:49:39 America/Lima] [AuthController] Redirigiendo a: /public/img/logo.png
+[06-Jun-2025 20:49:39 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:49:39 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Intentando cargar controlador: Public
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/PublicController.php
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/app/controllers/PublicController.php
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/controllers/PublicController.php
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/controllers/PublicController.php
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Controlador NO ENCONTRADO: PublicController.php. Cargando HomeController->notFound.
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Método NO ENCONTRADO: img en HomeController. Usando notFound.
+[06-Jun-2025 13:49:39 America/Lima] [App.php] Llamando a: HomeController->notFound con params: img, logo.png
+[06-Jun-2025 20:52:12 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:52:12 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Intentando cargar controlador: Public
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/PublicController.php
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/app/controllers/PublicController.php
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/controllers/PublicController.php
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/controllers/PublicController.php
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Controlador NO ENCONTRADO: PublicController.php. Cargando HomeController->notFound.
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Método NO ENCONTRADO: img en HomeController. Usando notFound.
+[06-Jun-2025 13:52:12 America/Lima] [App.php] Llamando a: HomeController->notFound con params: img, logo.png
+[06-Jun-2025 13:52:18 America/Lima] Ruta actual: /
+[06-Jun-2025 20:52:18 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:52:18 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:52:18 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:52:18 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 13:52:18 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:52:18 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:52:18 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:52:18 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:52:18 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:52:18 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 20:52:20 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 13:52:20 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Llamando a: AuthController->logout con params: 
+[06-Jun-2025 20:52:20 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:52:20 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:52:20 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 13:52:20 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 20:52:20 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:52:20 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:52:20 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 20:52:30 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 13:52:30 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 13:52:30 America/Lima] [AuthController] DIAGNÓSTICO: Forzando redirección a dashboard.
+[06-Jun-2025 20:52:30 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:52:30 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 13:52:30 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:52:30 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:52:30 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:52:30 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:52:30 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 20:54:43 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:54:43 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:54:43 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:54:43 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 13:54:43 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:54:43 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:54:43 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:54:43 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:54:44 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:54:44 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 20:57:27 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 13:57:27 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 13:57:27 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 13:57:27 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 13:57:27 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 13:57:27 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 13:57:27 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 13:57:27 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 13:57:27 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 13:57:27 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:00:52 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:00:52 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:00:52 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:00:52 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:00:52 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:00:52 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:00:52 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:00:52 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:00:52 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:00:52 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:01:21 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:01:21 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/controllers/MessagesController.php
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/controllers/MessagesController.php
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Controlador NO ENCONTRADO: MessagesController.php. Cargando HomeController->notFound.
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Método NO ENCONTRADO: create en HomeController. Usando notFound.
+[06-Jun-2025 14:01:21 America/Lima] [App.php] Llamando a: HomeController->notFound con params: create
+[06-Jun-2025 21:01:28 Europe/Berlin] URL solicitada: auth/logout
+[06-Jun-2025 14:01:28 America/Lima] Ruta actual: /auth/logout
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Llamando a: AuthController->logout con params: 
+[06-Jun-2025 21:01:28 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 14:01:28 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 21:01:28 Europe/Berlin] URL solicitada: public/img/logo.png
+[06-Jun-2025 14:01:28 America/Lima] Ruta actual: /public/img/logo.png
+[06-Jun-2025 21:01:28 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 14:01:28 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 14:01:28 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 21:01:39 Europe/Berlin] URL solicitada: auth/login
+[06-Jun-2025 14:01:39 America/Lima] Ruta actual: /auth/login
+[06-Jun-2025 14:01:39 America/Lima] [App.php] Intentando cargar controlador: Auth
+[06-Jun-2025 14:01:39 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/AuthController.php
+[06-Jun-2025 14:01:39 America/Lima] [App.php] Controlador cargado: AuthController
+[06-Jun-2025 14:01:39 America/Lima] [App.php] Llamando a: AuthController->login con params: 
+[06-Jun-2025 14:01:40 America/Lima] [AuthController] DIAGNÓSTICO: Forzando redirección a dashboard.
+[06-Jun-2025 21:01:40 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:01:40 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:01:40 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:01:40 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:01:40 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:01:40 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:01:40 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:01:40 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:01:40 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:01:40 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:02:04 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:02:04 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/controllers/MessagesController.php
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/controllers/MessagesController.php
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Controlador NO ENCONTRADO: MessagesController.php. Cargando HomeController->notFound.
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Método NO ENCONTRADO: create en HomeController. Usando notFound.
+[06-Jun-2025 14:02:04 America/Lima] [App.php] Llamando a: HomeController->notFound con params: create
