@@ -1,0 +1,40 @@
+[06-Jun-2025 08:26:48 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\MassMessage\core\App.php on line 10
+[06-Jun-2025 08:26:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "SITENAME" in C:\xampp\htdocs\MassMessage\views\templates\header.php:6
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\views\home\index.php(1): require()
+#1 C:\xampp\htdocs\MassMessage\core\Controller.php(9): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MassMessage\controllers\HomeController.php(12): Controller->view('home/index', Array)
+#3 C:\xampp\htdocs\MassMessage\core\App.php(27): HomeController->index()
+#4 C:\xampp\htdocs\MassMessage\index.php(7): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\MassMessage\views\templates\header.php on line 6
+[06-Jun-2025 08:27:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\MassMessage\core\App.php on line 10
+[06-Jun-2025 08:27:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "SITENAME" in C:\xampp\htdocs\MassMessage\views\templates\header.php:6
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\views\home\index.php(1): require()
+#1 C:\xampp\htdocs\MassMessage\core\Controller.php(9): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MassMessage\controllers\HomeController.php(12): Controller->view('home/index', Array)
+#3 C:\xampp\htdocs\MassMessage\core\App.php(27): HomeController->index()
+#4 C:\xampp\htdocs\MassMessage\index.php(7): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\MassMessage\views\templates\header.php on line 6
+[06-Jun-2025 08:32:46 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\MassMessage\core\App.php on line 10
+[06-Jun-2025 08:32:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "SITENAME" in C:\xampp\htdocs\MassMessage\views\templates\header.php:6
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\views\home\index.php(1): require()
+#1 C:\xampp\htdocs\MassMessage\core\Controller.php(9): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MassMessage\controllers\HomeController.php(12): Controller->view('home/index', Array)
+#3 C:\xampp\htdocs\MassMessage\core\App.php(27): HomeController->index()
+#4 C:\xampp\htdocs\MassMessage\index.php(13): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\MassMessage\views\templates\header.php on line 6
+[06-Jun-2025 08:39:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\MassMessage\core\App.php on line 10
+[06-Jun-2025 08:39:01 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "SITENAME" in C:\xampp\htdocs\MassMessage\views\templates\header.php:6
+Stack trace:
+#0 C:\xampp\htdocs\MassMessage\views\home\index.php(1): require()
+#1 C:\xampp\htdocs\MassMessage\core\Controller.php(9): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\MassMessage\controllers\HomeController.php(12): Controller->view('home/index', Array)
+#3 C:\xampp\htdocs\MassMessage\core\App.php(27): HomeController->index()
+#4 C:\xampp\htdocs\MassMessage\index.php(13): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\MassMessage\views\templates\header.php on line 6

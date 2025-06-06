@@ -1,0 +1,38 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Evitar el listado de directorios
+Options -Indexes
+
+# Manejo de errores personalizados
+ErrorDocument 404 /MassMessage/views/errors/404.php
+ErrorDocument 500 /MassMessage/views/errors/500.php
+
+# Redirigir todas las solicitudes al index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+# Configuraciones de seguridad
+<IfModule mod_headers.c>
+    # Protección XSS
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Prevenir clickjacking
+    Header always append X-Frame-Options SAMEORIGIN
+    
+    # Prevenir MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Configuración de CORS si es necesario
+    # Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Configuración de PHP
+<IfModule mod_php7.c>
+    php_flag display_errors on
+    php_value error_reporting E_ALL
+    php_value upload_max_filesize 10M
+    php_value post_max_size 12M
+    php_value max_execution_time 300
+</IfModule>

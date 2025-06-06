@@ -1,0 +1,89 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    CONFIGURACIÓN DE MASSMESSAGE                             ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+1. CONFIGURACIÓN DE LA BASE DE DATOS
+   ================================
+
+   a) Crear la base de datos:
+      - Accede a MySQL:
+        > mysql -u root -p
+      
+      - Ejecuta los siguientes comandos:
+        > CREATE DATABASE massmessage CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+        > CREATE USER 'massmessage_user'@'localhost' IDENTIFIED BY 'tu_contraseña';
+        > GRANT ALL PRIVILEGES ON massmessage.* TO 'massmessage_user'@'localhost';
+        > FLUSH PRIVILEGES;
+
+   b) Importar la estructura:
+      > mysql -u massmessage_user -p massmessage < DataBase.sql
+
+2. CONFIGURACIÓN DEL ARCHIVO .ENV
+   ============================
+
+   Crea un archivo .env en la raíz del proyecto con la siguiente información:
+
+   # Configuración de Base de Datos
+   DB_HOST=localhost
+   DB_NAME=massmessage
+   DB_USER=massmessage_user
+   DB_PASS=tu_contraseña
+
+   # Configuración de Email
+   SMTP_HOST=tu_servidor_smtp
+   SMTP_USERNAME=tu_usuario_smtp
+   SMTP_PASSWORD=tu_contraseña_smtp
+   SMTP_PORT=587
+   MAIL_FROM_ADDRESS=no-reply@tudominio.com
+   MAIL_FROM_NAME="MassMessage"
+
+   # Configuración de WhatsApp (opcional)
+   WHATSAPP_API_KEY=tu_api_key
+   WHATSAPP_API_SECRET=tu_api_secret
+
+   # Configuración de SMS (opcional)
+   SMS_API_KEY=tu_api_key
+   SMS_API_SECRET=tu_api_secret
+
+3. INICIAR SERVICIOS
+   ================
+
+   a) Servidor Web:
+      > php -S localhost:8000
+
+   b) Servidor WebSocket:
+      > start_activity_server.bat
+
+   c) Procesador de Cola:
+      > process_queue.bat
+
+4. CREAR USUARIO ADMINISTRADOR
+   =========================
+
+   Ejecuta en MySQL:
+
+   > USE massmessage;
+   > INSERT INTO users (name, email, password, created_at) VALUES 
+     ('Admin', 'admin@massmessage.com', 
+      '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', NOW());
+   > INSERT INTO user_roles (user_id, role_id) 
+     SELECT 1, id FROM roles WHERE name = 'admin';
+
+5. VERIFICACIÓN
+   ===========
+
+   - Accede a http://localhost:8000
+   - Inicia sesión con:
+     Usuario: admin@massmessage.com
+     Contraseña: password
+   - Verifica que puedas acceder a todos los módulos
+   - Prueba enviar un mensaje de prueba
+
+6. SOLUCIÓN DE PROBLEMAS
+   ====================
+
+   Si encuentras errores:
+   - Verifica que todos los servicios estén corriendo
+   - Revisa los logs en la carpeta /logs
+   - Asegúrate de que los puertos necesarios (8000, 8080) estén disponibles
+   - Verifica las credenciales en el archivo .env

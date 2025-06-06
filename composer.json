@@ -1,0 +1,21 @@
+{
+    "name": "mauricio/mass-message",
+    "description": "Aplicación para envío masivo de mensajes",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mauri03C",
+            "email": "rgmauricio86@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1",
+        "tecnickcom/tcpdf": "^6.10",
+        "phpmailer/phpmailer": "^6.10",
+        "twilio/sdk": "^8.6",
+        "cboden/ratchet": "^0.4.4",
+        "textalk/websocket": "^1.6"
+    }
+}
