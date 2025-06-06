@@ -1202,3 +1202,192 @@ Stack trace:
 [06-Jun-2025 14:02:04 America/Lima] [App.php] Controlador NO ENCONTRADO: MessagesController.php. Cargando HomeController->notFound.
 [06-Jun-2025 14:02:04 America/Lima] [App.php] Método NO ENCONTRADO: create en HomeController. Usando notFound.
 [06-Jun-2025 14:02:04 America/Lima] [App.php] Llamando a: HomeController->notFound con params: create
+[06-Jun-2025 21:07:21 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:07:21 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:07:21 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:07:21 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:07:21 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:07:21 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:07:21 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:07:21 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:07:21 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:07:21 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:07:24 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:07:24 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:07:24 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:07:24 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:07:24 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:07:24 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 14:07:24 America/Lima] PHP Warning:  Undefined array key "templates" in C:\xampp\htdocs\MassMessage\views\messages\create.php on line 92
+[06-Jun-2025 14:07:24 America/Lima] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\MassMessage\views\messages\create.php on line 92
+[06-Jun-2025 21:08:34 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:08:34 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:08:34 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:08:34 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:08:34 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:08:34 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:09:16 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:09:16 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:09:16 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:09:16 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:09:16 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:09:16 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:09:16 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 14:09:16 America/Lima] PHP Warning:  Undefined array key "messages" in C:\xampp\htdocs\MassMessage\views\messages\index.php on line 14
+[06-Jun-2025 14:09:16 America/Lima] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\MassMessage\views\messages\index.php on line 14
+[06-Jun-2025 21:10:45 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:10:45 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:10:45 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:10:45 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:10:45 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:10:45 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:10:45 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 21:10:56 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:10:56 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:10:56 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:10:56 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:10:56 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:10:56 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:11:05 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:11:05 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:11:05 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:11:05 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:11:05 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:11:05 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:11:05 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:11:05 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:11:05 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:11:05 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:11:09 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:11:09 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:11:09 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:11:09 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:11:09 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:11:09 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:11:10 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:11:10 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:11:10 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:11:10 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:11:10 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:11:10 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:11:10 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 21:13:46 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:13:46 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:13:46 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:13:46 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:13:46 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:13:46 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:13:46 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 21:13:49 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:13:49 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:13:49 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:13:49 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:13:49 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:13:49 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:14:50 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:14:50 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:14:50 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:14:50 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:14:50 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:14:50 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:14:50 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:14:50 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:14:50 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:14:50 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:15:02 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:15:02 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:15:02 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:15:02 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:15:02 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:15:02 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:15:02 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 21:15:06 Europe/Berlin] URL solicitada: users/profile
+[06-Jun-2025 14:15:06 America/Lima] Ruta actual: /users/profile
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Intentando cargar controlador: Users
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/UsersController.php
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/app/controllers/UsersController.php
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/controllers/UsersController.php
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Archivo controlador NO ENCONTRADO en ruta absoluta: C:\xampp\htdocs\MassMessage/controllers/UsersController.php
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Controlador NO ENCONTRADO: UsersController.php. Cargando HomeController->notFound.
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Método NO ENCONTRADO: profile en HomeController. Usando notFound.
+[06-Jun-2025 14:15:06 America/Lima] [App.php] Llamando a: HomeController->notFound con params: profile
+[06-Jun-2025 21:18:57 Europe/Berlin] URL solicitada: users/profile
+[06-Jun-2025 14:18:57 America/Lima] Ruta actual: /users/profile
+[06-Jun-2025 14:18:57 America/Lima] [App.php] Intentando cargar controlador: Users
+[06-Jun-2025 14:18:57 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/UsersController.php
+[06-Jun-2025 14:18:57 America/Lima] [App.php] Controlador cargado: UsersController
+[06-Jun-2025 14:18:57 America/Lima] [App.php] Llamando a: UsersController->profile con params: 
+[06-Jun-2025 21:19:10 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:19:10 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:19:10 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:19:10 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:19:10 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:19:10 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:19:10 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:19:10 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:19:10 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:19:10 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:19:11 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:19:11 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:19:11 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:19:11 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:19:11 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:19:11 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:19:13 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:19:13 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:19:13 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:19:13 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:19:13 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:19:13 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:19:13 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 21:19:17 Europe/Berlin] URL solicitada: users/profile
+[06-Jun-2025 14:19:17 America/Lima] Ruta actual: /users/profile
+[06-Jun-2025 14:19:17 America/Lima] [App.php] Intentando cargar controlador: Users
+[06-Jun-2025 14:19:17 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/UsersController.php
+[06-Jun-2025 14:19:17 America/Lima] [App.php] Controlador cargado: UsersController
+[06-Jun-2025 14:19:17 America/Lima] [App.php] Llamando a: UsersController->profile con params: 
+[06-Jun-2025 21:19:56 Europe/Berlin] URL solicitada: messages
+[06-Jun-2025 14:19:56 America/Lima] Ruta actual: /messages
+[06-Jun-2025 14:19:56 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:19:56 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:19:56 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:19:56 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en MessagesController
+[06-Jun-2025 14:19:56 America/Lima] [App.php] Llamando a: MessagesController->index con params: 
+[06-Jun-2025 21:19:58 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:19:58 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:19:58 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:19:58 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:19:58 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:19:58 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:19:59 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:19:59 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:19:59 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:19:59 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:19:59 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:19:59 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:19:59 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:19:59 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:19:59 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:19:59 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:20:05 Europe/Berlin] URL solicitada: messages/create
+[06-Jun-2025 14:20:05 America/Lima] Ruta actual: /messages/create
+[06-Jun-2025 14:20:05 America/Lima] [App.php] Intentando cargar controlador: Messages
+[06-Jun-2025 14:20:05 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/MessagesController.php
+[06-Jun-2025 14:20:05 America/Lima] [App.php] Controlador cargado: MessagesController
+[06-Jun-2025 14:20:05 America/Lima] [App.php] Llamando a: MessagesController->create con params: 
+[06-Jun-2025 21:22:52 Europe/Berlin] URL solicitada: dashboard
+[06-Jun-2025 14:22:52 America/Lima] Ruta actual: /dashboard
+[06-Jun-2025 14:22:52 America/Lima] [App.php] Intentando cargar controlador: Dashboard
+[06-Jun-2025 14:22:52 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/DashboardController.php
+[06-Jun-2025 14:22:52 America/Lima] [DashboardController] Instanciado.
+[06-Jun-2025 14:22:52 America/Lima] [DashboardController] Sesión user_id ENCONTRADA: 2
+[06-Jun-2025 14:22:52 America/Lima] [App.php] Controlador cargado: DashboardController
+[06-Jun-2025 14:22:52 America/Lima] [App.php] No se especificó método en URL. Usando método por defecto: index en DashboardController
+[06-Jun-2025 14:22:52 America/Lima] [App.php] Llamando a: DashboardController->index con params: 
+[06-Jun-2025 14:22:52 America/Lima] [DashboardController] Ejecutando método index.
+[06-Jun-2025 21:23:04 Europe/Berlin] URL solicitada: users/profile
+[06-Jun-2025 14:23:04 America/Lima] Ruta actual: /users/profile
+[06-Jun-2025 14:23:04 America/Lima] [App.php] Intentando cargar controlador: Users
+[06-Jun-2025 14:23:04 America/Lima] [App.php] Buscando archivo controlador (ruta absoluta): C:\xampp\htdocs\MassMessage/app/controllers/UsersController.php
+[06-Jun-2025 14:23:04 America/Lima] [App.php] Controlador cargado: UsersController
+[06-Jun-2025 14:23:04 America/Lima] [App.php] Llamando a: UsersController->profile con params: 
